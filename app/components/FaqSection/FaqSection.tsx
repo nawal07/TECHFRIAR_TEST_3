@@ -16,7 +16,7 @@ const faqData = [
   },
   {
     question: 'Can I opt for a car for a longer period?',
-    answer: "You can, although the maximum duration shouldn't exceed 6 months.",
+    answer: "You can, although the maximum duration should not exceed 6 months.",
   },
   {
     question: 'Can I book a one-way trip?',
