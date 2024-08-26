@@ -1,0 +1,181 @@
+.popularCarSection {
+  margin: 2.5rem 4rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 3.25rem;
+}
+
+.popularCars {
+  margin: 2.5rem 0;
+  display: flex;
+  gap: 1.5rem;
+  width: calc(100% + 4rem);
+  overflow-x: scroll;
+}
+
+.popularCars::-webkit-scrollbar {
+  display: none;
+}
+
+.popularCar {
+  display: flex;
+}
+.car {
+  width: 22.5rem;
+  height: 18.125rem;
+}
+
+.popularCarDetails {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: 18.125rem;
+  padding: 1.7rem 2.5rem;
+  border: 1px solid #d9d9d9;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carTitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: #1a202c;
+}
+
+.carDescription {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.1rem;
+}
+
+.carDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.carFeatures {
+  width: 19rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.carbooknPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carPrice {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #1a202c;
+}
+.carBook {
+  width: 6.5rem;
+  height: 2.3rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  background-color: #e21e26;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3rem;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .popularCarSection {
+    margin: 1.5rem 2rem;
+  }
+  .popularCars {
+    width: calc(100% + 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .heading{
+    font-size: 1.3rem;
+  }
+  .popularCarSection {
+    margin: 2.5rem 1.5rem;
+  }
+  .popularCars {
+    width: calc(100% + 1.5rem);
+  }
+}
+
+@media (max-width: 426px) {
+  .heading {
+    text-align: left;
+    line-height:0;
+  }
+  .popularCar {
+    flex-direction: column;
+  }
+  .popularCarDetails {
+    padding: 0.6rem;
+  }
+  .car {
+    width: 20rem;
+    height: 16rem;
+  }
+  .popularCarDetails {
+    width: 20rem;
+    height: 17rem;
+  }
+  .carTitle {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .carDescription {
+    font-size: 1rem;
+    color: #000000bf;
+    padding-bottom: 1rem;
+    max-height: 3.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .carDetails {
+    overflow-x: scroll;
+  }
+  .carDetails::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carFeatures {
+    width: calc(100% + 7rem);
+  }
+  .feature p {
+    font-size: 1rem;
+  }
+  .carbooknPrice {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

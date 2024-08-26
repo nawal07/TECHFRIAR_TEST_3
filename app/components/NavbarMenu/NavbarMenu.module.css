@@ -1,0 +1,110 @@
+.navbarMenuItems {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbarMenuItemsList {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 22.5px;
+  text-align: left;
+}
+
+/* Notification Dynamic  */
+
+.navbarNotification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbarNotificationIcon {
+  position: relative;
+  display: inline-block;
+}
+
+.navbarBellIcon {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.navbarNotificationCount {
+  position: absolute;
+  top: -0.2rem;
+  right: -0.2rem;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+/* User Name  */
+
+.navbarUserNotification{
+    display: flex;
+    align-items: flex-end;    
+    gap: 1rem;
+}
+.navbarUser {
+  text-decoration: none;
+}
+
+.navbarUserProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: black;
+  padding: 0.4rem 0.6rem;
+  border-radius: 2rem;
+  color: white;
+}
+
+.navbarUserIcon {
+  background-color: white;
+  color: black;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbarUserInitial {
+  font-weight: bold;
+}
+
+.navbarUserName {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1280px) {
+  .navbarMenuItemsList{
+    font-size: .8rem;
+  }
+
+  .navbarUserInitial {
+    font-size: 0.6rem;
+  }
+
+  .navbarUserName {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+    .navbarMenuItems{
+        display: none;
+    }
+}

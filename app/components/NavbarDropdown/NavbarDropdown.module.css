@@ -1,0 +1,66 @@
+.hamburgerMenu {
+  display: none;
+  position: relative;
+}
+
+.hamburgerIcon { 
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: fixed;
+  right: 0;
+  background-color: white;
+  width: 70vw;
+  box-shadow: 0 4px 8px #0000001a;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdownMenuList {
+  list-style: none;
+}
+
+.dropdownItem {
+  border-bottom: 1px solid #0000001a;
+  margin: 0 1.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;    
+}
+
+.dropdownMenu li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+.userLogin {
+  width: fit-content;
+  background-color: #000000;
+  border-radius: 2rem;
+  color: #ffffff;
+  margin: 2rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .hamburgerMenu {
+    display: inline-block;
+  }
+}

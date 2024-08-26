@@ -1,0 +1,107 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.25rem;
+  padding-top: 1.25rem;
+}
+.rentLeaseSection {
+  width: 80%;
+  height: fit-content;
+  /* padding: 0 8.5rem;
+    padding-top: 1.25rem; */
+}
+
+.rentLeaseSectionTitle {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.25rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rentLeaseSectionContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rentLeaseSectionContentTitle {
+  display: flex;
+  justify-content: space-around;
+}
+.rentLeaseSectionContentTitle p {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #e21e26;
+  background-color: #ffffff;
+  margin: 0.5rem;
+  width: 4rem;
+  height: 3.25rem;
+  border-radius: 0.4px;
+  box-shadow: 1px 1px 1px 0px #e4e3e380;
+}
+
+.rentLeaseSectionContentDescription {
+  /* width: 348px; */
+  width: 21.75rem;
+  height: 11.2rem;
+  /* height: 178px; */
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 1rem;
+}
+
+.rentLeaseSectionContentDescription p {
+  font-family: Helvetica;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.18rem;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+@media (max-width: 1400px) {
+  .rentLeaseSectionContentDescription {
+    width: 20rem;
+    height: 10.4rem;
+  }
+  .rentLeaseSectionContentDescription p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .rentLeaseSectionContentDescription {
+    width: 17rem;
+    height: 10.4rem;
+  }
+  .rentLeaseSectionContentDescription p {
+    /* font-size: .7rem; */
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0;
+  }
+  .rentLeaseSectionTitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  .rentLeaseSectionContent {
+    flex-direction: column;
+  }
+  .rentLeaseSectionContentDescription {
+    width: 21.75rem;
+    height: 11.2rem;
+  }
+  .rentLeaseSectionContentDescription p {
+    font-size: 0.9rem;
+    padding: 1.25rem;
+  }
+}

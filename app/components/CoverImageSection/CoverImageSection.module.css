@@ -1,0 +1,101 @@
+
+.coverImageSection {
+  position: relative;
+  margin: 0 4rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  height: 25rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.coverImageText {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding-bottom: 6rem;
+}
+.coverImageText1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.giftVoucher {
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #009046;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dotsContainer {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  height: .7rem;
+  width: .7rem;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: .5;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.coverImageSection.slideIn {
+  animation: slideIn 1s forwards;
+}
+
+@media (max-width: 1024px) {
+  .coverImageSection {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .coverImageSection {
+    margin: 0;
+    border-radius: 0;
+    height: 18rem;
+  }
+  .coverImageText {
+    padding-bottom: 4rem;
+  }
+  .coverImageText1 {
+    gap: 0.5rem;
+  }
+  .giftVoucher {
+    border-radius: 0;
+    padding: 0.1rem 0.5rem;
+  }
+}
