@@ -87,7 +87,7 @@ const SubscribeSection: React.FC = () => {
           </div>
         </div>
         <p className={styles.subscribeFormCatch}>
-          Don't miss out! Enter your email and your name, then hit subscribe to
+          Dont miss out! Enter your email and your name, then hit subscribe to
           unlock a world of special offers and details.
         </p>
         <p className={styles.subscribeFormCatchResponsive}>
