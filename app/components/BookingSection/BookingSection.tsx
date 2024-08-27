@@ -16,16 +16,19 @@ const BookingSection = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null); // Reference to the button
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
         dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
+        !dropdownRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
       ) {
         setShowDropdown(false);
       }
-    };
+    }
 
     document.addEventListener('mousedown', handleClickOutside);
 
@@ -200,11 +203,12 @@ const BookingSection = () => {
       <div className={styles.bookQuickbookCar}>
         {/* Booking options Responsive  */}
         <div className={styles.bookQuickbookCarOptions}>
-          <button
+        <button
             onClick={() => {
-              setShowDropdown(!showDropdown);
+              setShowDropdown(!showDropdown); 
             }}
             className={styles.bookCar}
+            ref={buttonRef}
           >
             Book a Car
           </button>
