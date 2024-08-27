@@ -37,6 +37,7 @@ const BookingSection = () => {
   return (
     <>
       <div className={styles.main}>
+        {/* Booking Mode  */}
         <div className={styles.bookingMode}>
           <p
             onClick={() => {
@@ -197,6 +198,7 @@ const BookingSection = () => {
         </div>
       </div>
       <div className={styles.bookQuickbookCar}>
+        {/* Booking options Responsive  */}
         <div className={styles.bookQuickbookCarOptions}>
           <button
             onClick={() => {
@@ -215,6 +217,7 @@ const BookingSection = () => {
           }`}
           ref={dropdownRef}
         >
+        {/* Booking mode Responsive  */}
           <div className={styles.bookCarOptions}>
             <p
               onClick={() => {
@@ -241,6 +244,7 @@ const BookingSection = () => {
             </select>
           </div>
           <div className={styles.bookCarDetails}>
+            {/* Same Location dropdown  */}
             <div
               className={`${styles.locationDropdown} ${
                 dropOff && styles.diffDropdown
@@ -268,6 +272,7 @@ const BookingSection = () => {
                 className={styles.dropdownIcon}
               ></Image>
             </div>
+            {/* Different Location dropdown  */}
             <div className={styles.locationDropdown}>
               <div>
                 <Image
@@ -333,6 +338,7 @@ const BookingSection = () => {
         </div>
        
       </div>
+      {/* Phone and 24/7 icons  */}
       <div className={styles.contactIconphone}>
           <Image className={styles.contactIcon} src="/phone.svg" alt="" width={26} height={26}/>
         </div>

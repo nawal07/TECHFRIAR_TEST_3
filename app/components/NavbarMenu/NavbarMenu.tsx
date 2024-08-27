@@ -8,6 +8,7 @@ const NavbarMenu = () => {
   const notifications = 1;
   return (
     <>
+    {/* Navbar Menu  */}
       <div className={styles.navbarMenuItems}>
         <Link className={styles.navbarMenuItemsList} href="#">
           About

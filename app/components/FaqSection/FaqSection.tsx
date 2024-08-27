@@ -42,6 +42,7 @@ const FaqSection = () => {
   };
 
   return (
+    // Faq Section 
     <div className={styles.faqSection}>
       <h2>Frequently asked questions</h2>
       <div className={styles.faqSectionContents}>

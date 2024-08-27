@@ -32,6 +32,7 @@ const NavbarDropdown = () => {
   }, []);
 
   return (
+    // Navbar dropdown Menu 
     <div ref={dropdownRef} className={styles.hamburgerMenu}>
       {active ?? <div className={styles.overlay} onClick={toggleMenu}></div>}
       <Image

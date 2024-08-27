@@ -20,6 +20,7 @@ const CoverImageSection = () => {
   }, [images.length]);
 
   return (
+    // Cover Image section 
     <div
       id="offer"
       className={styles.coverImageSection}

@@ -7,6 +7,7 @@ import NavbarDropdown from '../NavbarDropdown/NavbarDropdown';
 
 const Navbar = () => {
   return (
+    // Navbar Section 
     <div className={styles.main}>
       <div className={styles.navbarSocialMediaIcons}>
         <Link href="https://www.facebook.com">
@@ -62,7 +63,9 @@ const Navbar = () => {
             height={52}
           />
         </div>
+         {/* Navbar Menu  */}
         <NavbarMenu />
+        {/* Navbar Dropdown  */}
         <NavbarDropdown />
       </div>
       <div className={styles.navbarCatch}>

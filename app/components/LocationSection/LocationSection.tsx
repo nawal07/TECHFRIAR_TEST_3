@@ -10,6 +10,7 @@ const sans = Open_Sans({
 
 const LocationSection = () => {
   return (
+    // Location Section 
     <div id="location" className={styles.locationSection}>
       <h2>Locations</h2>
       <div className={styles.differentLocations}>

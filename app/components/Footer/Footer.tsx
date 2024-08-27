@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
+    // Footer Section 
     <div id='#about' className={styles.footerSection}>
       <div className={styles.footerSectionMain}>
         <div className={styles.footerSectionOne}>
@@ -115,7 +116,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
+      {/* Footer section Responsive  */}
       <div className={styles.footerSectionResponsive}>
         <div id="aboutus" className={styles.footerSectionResponsiveOne}>
           <Image

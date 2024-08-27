@@ -60,6 +60,7 @@ const SubscribeSection: React.FC = () => {
   };
 
   return (
+    // Subscribe section 
     <div className={styles.subscribeSection}>
       <div className={styles.subscribeForm}>
         <p className={styles.subscribeTitle}>
@@ -133,6 +134,7 @@ const SubscribeSection: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* Subscribe link section responsive  */}
       <div className={styles.subscribeLinkResponsive}>
         <div className={styles.subscribeLinkResponsiveHead}>
           <Image
